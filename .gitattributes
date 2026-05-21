@@ -4,13 +4,13 @@ from time import strftime
 root = tk.Tk()
 root.title("Digital Clock")
 def time():
-    string = strftime('%H:%M:%S %p %D')
+    string = strftime('%H:%M:%S %P %D')
     label.config(text=string)
     label.after(1000,time)
 
-label = tk.Label(root, font=('calibri',50,'bold'),background = 'black' , foreground = 'white')
-label.pack(anchor='center')
+    label = tk.Label(root, font=('calibri','50','bold'),background = 'black',foreground = 'white')
+    label.pack(anchor = 'centre')
+    time()
 
-time()
-
-root.mainloop()
+    root.mainloop()
+    
